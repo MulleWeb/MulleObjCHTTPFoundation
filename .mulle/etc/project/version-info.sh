@@ -4,5 +4,5 @@
 # enough for you. If you don't have this file, there will be
 # not git operations.
 #
-VERSIONNAME="MULLE_OBJC_INET_FOUNDATION_VERSION"
-VERSIONFILE="src/MulleObjCInetFoundation.h"
+VERSIONNAME="MULLE_OBJC_HTTP_FOUNDATION_VERSION"
+VERSIONFILE="src/MulleObjCHTTPFoundation.h"

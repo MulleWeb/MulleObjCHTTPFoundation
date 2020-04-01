@@ -15,11 +15,13 @@ src/include-private.h
 )
 
 set( PUBLIC_HEADERS
-src/MulleObjCInetFoundation.h
-src/MulleObjCLoader+MulleObjCInetFoundation.h
-src/NSHost.h
+src/MulleHTTPHeaderParser.h
+src/MulleHTTP.h
+src/MulleObjCHTTPFoundation.h
+src/MulleObjCLoader+MulleObjCHTTPFoundation.h
+src/NSDate+MulleHTTP.h
 src/NSString+HTML.h
-src/NSURL.h
+src/NSString+ListComponents.h
 src/http_parser.h
 src/import.h
 src/include.h

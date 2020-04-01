@@ -1,4 +1,4 @@
-# MulleObjCInetFoundation
+# MulleObjCHTTPFoundation
 
 📠 Internet-related classes like NSHost and NSURL
 
@@ -13,7 +13,7 @@ Provides HTML escaping and unescaping for **NSString**.
 
 Build Status | Release Version
 -------------|-----------------------------------
-[![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCInetFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCInetFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCInetFoundation.svg) [![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCInetFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCInetFoundation)
+[![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCHTTPFoundation.svg) [![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation)
 
 
 ## Install

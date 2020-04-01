@@ -1,15 +1,15 @@
 //
 //  MulleObjCLoader+InetFoundation.m
-//  MulleObjCInetFoundation
+//  MulleObjCHTTPFoundation
 //
 //  Created by Nat! on 11.05.17.
 //
 //
 
-#import "MulleObjCLoader+MulleObjCInetFoundation.h"
+#import "MulleObjCLoader+MulleObjCHTTPFoundation.h"
 
 
-@implementation MulleObjCLoader( MulleObjCInetFoundation)
+@implementation MulleObjCLoader( MulleObjCHTTPFoundation)
 
 + (struct _mulle_objc_dependency *) dependencies
 {
