@@ -15,8 +15,8 @@ include( _Headers)
 
 # add ignored headers back in so that the generators pick them up
 set( PUBLIC_HEADERS
-"src/_MulleObjCInetFoundation-import.h"
-"src/_MulleObjCInetFoundation-include.h"
+"src/_MulleObjCHTTPFoundation-import.h"
+"src/_MulleObjCHTTPFoundation-include.h"
 ${PUBLIC_HEADERS}
 )
 
@@ -34,8 +34,8 @@ list( REMOVE_ITEM INSTALL_PRIVATE_HEADERS "include-private.h")
 
 # add ignored headers back in so that the generators pick them up
 set( PRIVATE_HEADERS
-"src/_MulleObjCInetFoundation-import-private.h"
-"src/_MulleObjCInetFoundation-include-private.h"
+"src/_MulleObjCHTTPFoundation-import-private.h"
+"src/_MulleObjCHTTPFoundation-include-private.h"
 ${PRIVATE_HEADERS}
 )
 

@@ -53,3 +53,4 @@ tmp.*/
 
 *.sublime-workspace
 .mulle/etc/env/environment-host-*.sh
+MulleObjCHTTPFoundation.code-workspace

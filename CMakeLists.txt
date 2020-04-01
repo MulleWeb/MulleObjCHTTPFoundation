@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.1)
 
-project( MulleObjCInetFoundation C)
+project( MulleObjCHTTPFoundation C)
 
 
 ### mulle-sde environment
@@ -16,9 +16,9 @@ include( Files)
 ### Library
 
 if( HEADERS_PHASE)
-   install( FILES ${INSTALL_PUBLIC_HEADERS}  DESTINATION "include/MulleObjCInetFoundation")
-   install( FILES ${INSTALL_PRIVATE_HEADERS} DESTINATION "include/MulleObjCInetFoundation/private")
-   install( FILES ${CMAKE_INCLUDES}          DESTINATION "include/MulleObjCInetFoundation/cmake")
+   install( FILES ${INSTALL_PUBLIC_HEADERS}  DESTINATION "include/MulleObjCHTTPFoundation")
+   install( FILES ${INSTALL_PRIVATE_HEADERS} DESTINATION "include/MulleObjCHTTPFoundation/private")
+   install( FILES ${CMAKE_INCLUDES}          DESTINATION "include/MulleObjCHTTPFoundation/cmake")
 
    # short cut out
    if( NOT COMPILE_PHASE AND NOT LINK_PHASE)

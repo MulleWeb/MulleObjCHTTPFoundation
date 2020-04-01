@@ -1,6 +1,6 @@
 //
 //  MulleObjCLoader+InetFoundation.h
-//  MulleObjCInetFoundation
+//  MulleObjCHTTPFoundation
 //
 //  Created by Nat! on 11.05.17.
 //
@@ -9,5 +9,5 @@
 #import "import.h"
 
 
-@interface MulleObjCLoader( MulleObjCInetFoundation)
+@interface MulleObjCLoader( MulleObjCHTTPFoundation)
 @end

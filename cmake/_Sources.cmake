@@ -6,15 +6,15 @@ if( MULLE_TRACE_INCLUDE)
 endif()
 
 set( SOURCES
-src/MulleObjCInetFoundation.m
-src/NSHost.m
+src/MulleHTTPHeaderParser.m
+src/MulleObjCHTTPFoundation.m
+src/NSDate+MulleHTTP.m
 src/NSString+HTML.m
-src/NSURL+File.m
+src/NSString+ListComponents.m
 src/NSURL+HTTP.m
-src/NSURL.m
 src/http_parser.c
 )
 
 set( STAGE2_SOURCES
-src/MulleObjCLoader+MulleObjCInetFoundation.m
+src/MulleObjCLoader+MulleObjCHTTPFoundation.m
 )

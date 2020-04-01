@@ -6,9 +6,9 @@
 //  Copyright © 2016 Mulle kybernetiK. All rights reserved.
 //
 
-#include "MulleObjCInetFoundation.h"
+#include "MulleObjCHTTPFoundation.h"
 
 #include <stdint.h>
 
 // linker lameness
-uint32_t   MulleObjCInetFoundationVersion = MULLE_OBJC_INET_FOUNDATION_VERSION;
+uint32_t   MulleObjCHTTPFoundationVersion = MULLE_OBJC_INET_FOUNDATION_VERSION;

@@ -1,3 +1,11 @@
+## 0.17.0
+
+* split off from MulleObjCInetFoundation.m
+* added .validated flag to `struct MulleEscapedURLPartsUTF8` so superflous characterset checks can be avoided
+* added -stringValue as the canonical string conversion from NSURL
+* completely rewrote NSURL
+
+
 ## 0.16.0
 
 * fix a leak in NSHost
