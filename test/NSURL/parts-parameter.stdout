@@ -1,0 +1,32 @@
+Scheme            : *nil*
+User              : *nil*
+Password          : *nil*
+Host              : *nil*
+Port              : 0
+Path              : *nil*
+Parameter         : a=1
+Query             : *nil*
+Fragment          : *nil*
+ResourceSpecifier : ;a=1
+
+Scheme            : *nil*
+User              : *nil*
+Password          : *nil*
+Host              : *nil*
+Port              : 0
+Path              : *nil*
+Parameter         : a=1;b=3
+Query             : *nil*
+Fragment          : *nil*
+ResourceSpecifier : ;a=1;b=3
+
+Scheme            : *nil*
+User              : *nil*
+Password          : *nil*
+Host              : *nil*
+Port              : 0
+Path              : *nil*
+Parameter         : a=1;b=1 2 3
+Query             : *nil*
+Fragment          : *nil*
+ResourceSpecifier : ;a=1;b=1 2 3
