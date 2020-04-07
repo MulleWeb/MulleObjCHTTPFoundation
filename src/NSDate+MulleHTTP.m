@@ -54,6 +54,9 @@ static struct
 }
 
 
+//
+// for this we need the MulleObjCOSFoundation
+//
 static NSDateFormatter  *getHTTPDateFormatter( void)
 {
    NSDateFormatter  *formatter;
