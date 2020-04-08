@@ -21,6 +21,15 @@
 //    remove for os:   `mulle-sourcetree mark MulleObjCInetFoundation no-os-<osname>`
 # import <MulleObjCInetFoundation/MulleObjCInetFoundation.h>   // MulleObjCInetFoundation
 
+// How to tweak the following MulleFoundation #import
+//    remove:          `mulle-sourcetree mark MulleFoundation no-header`
+//    rename:          `mulle-sourcetree mark MulleFoundation set include whatever.h`
+//    toggle #import:  `mulle-sourcetree mark MulleFoundation [no-]import`
+//    toggle public:   `mulle-sourcetree mark MulleFoundation [no-]public`
+//    toggle optional: `mulle-sourcetree mark MulleFoundation [no-]require`
+//    remove for os:   `mulle-sourcetree mark MulleFoundation no-os-<osname>`
+# import <MulleFoundation/MulleFoundation.h>   // MulleFoundation
+
 #include "_MulleObjCHTTPFoundation-include.h"
 
 
