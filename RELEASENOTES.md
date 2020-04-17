@@ -1,3 +1,7 @@
+### 0.17.1
+
+* moved `http_parser` to mulle-c
+
 ## 0.17.0
 
 * split off from MulleObjCInetFoundation.m

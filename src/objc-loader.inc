@@ -1,3 +1,4 @@
+      { @selector( MulleObjCLoader), @selector( MulleFoundation) },      // 47a9beb6;MulleObjCLoader;46ed3b36;MulleFoundation
       { @selector( MulleObjCLoader), @selector( MulleObjCInetFoundation) },      // 47a9beb6;MulleObjCLoader;088ec1b3;MulleObjCInetFoundation
       { @selector( MulleHTTPHeaderParser), MULLE_OBJC_NO_CATEGORYID },      // 33ba7405;MulleHTTPHeaderParser;;
       { @selector( NSDate), @selector( MulleHTTP) },      // cfcedd21;NSDate;72f647ea;MulleHTTP

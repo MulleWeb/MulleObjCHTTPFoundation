@@ -7,7 +7,7 @@
 //
 #import "import.h"
 
-#define MULLE_OBJC_HTTP_FOUNDATION_VERSION  ((0 << 20) | (17 << 8) | 0)
+#define MULLE_OBJC_HTTP_FOUNDATION_VERSION  ((0 << 20) | (17 << 8) | 1)
 
 // html ? not necessarily the proper place here...
 #import "NSDate+MulleHTTP.h"

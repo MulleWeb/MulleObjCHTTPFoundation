@@ -36,7 +36,6 @@
 #import "import-private.h"
 
 // other files in this library
-#include "http_parser.h"
 
 // other libraries of MulleObjCStandardFoundation
 
