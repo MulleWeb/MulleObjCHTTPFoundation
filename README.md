@@ -1,31 +1,65 @@
 # MulleObjCHTTPFoundation
 
-📠 Internet-related classes like NSHost and NSURL
+#### 🎫  HTTP and HTML utility methods and classes for mulle-objc
 
-Adds **NSURL** and **NSHost** classes.
-Provides HTML escaping and unescaping for **NSString**.
-
-
-> This is part of the MulleFoundation and not MulleWeb because NSURL is used
-> (unfortunately) in the MulleObjCOSFoundation for various file operations.
-
+Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
+**NSString**.
 
 
 Build Status | Release Version
 -------------|-----------------------------------
-[![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCHTTPFoundation.svg) [![Build Status](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleFoundation/MulleObjCHTTPFoundation)
+[![Build Status](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleObjCHTTPFoundation.svg) [![Build Status](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation)
 
+## About
+
+**NSString** gains these principal methods:
+
+```
+- (NSString *) mulleStringByEscapingHTML;
+- (NSString *) mulleStringByUnescapingHTML;
+```
+
+**NData** gains this method:
+
+```
+- (NSString *) mulleHTTPDescription;
+```
+
+**NSURL** is modified to parse HTTP URLs.
+
+
+## Add
+
+Use [mulle-sde](//github.com/mulle-sde) to add MulleObjCHTTPFoundation to your project:
+
+```
+mulle-sde dependency add --c --github MulleWeb MulleObjCHTTPFoundation
+```
 
 ## Install
 
-See [foundation-developer](//github.com//foundation-developer) for
+**MulleObjCHTTPFoundation** is part of **Foundation**, see
+[foundation-developer](//github.com//foundation-developer) for
 installation instructions.
 
 
-## License
+### Manual install
 
-Parts of this library:
+Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCHTTPFoundation
+and all its dependencies:
 
+```
+mulle-sde install --linkorder --objc --prefix /usr/local \
+   https://github.com/MulleWeb/MulleObjCHTTPFoundation/archive/latest.tar.gz
+```
+
+
+## Acknowledgments
+
+
+The HTML escaping code of this library:
+
+```
 Copyright 2008 Google Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -39,11 +73,10 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
-
+```
 
 ## Authors
 
 [Nat!](//www.mulle-kybernetik.com/weblog) for
 [Mulle kybernetiK](//www.mulle-kybernetik.com) and
 [Codeon GmbH](//www.codeon.de)
-Some guys at Google.
