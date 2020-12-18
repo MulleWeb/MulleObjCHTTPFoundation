@@ -8,7 +8,7 @@ endif()
 
 #
 # Generated from sourcetree: MulleObjCInetFoundation;no-singlephase;
-# Disable with: `mulle-sourcetree mark MulleObjCInetFoundation no-link`
+# Disable with: `mulle-sourcetree mark MulleObjCInetFoundation no-header`
 #
 if( NOT MULLE_OBJC_INET_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_INET_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCInetFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -93,7 +93,7 @@ endif()
 
 #
 # Generated from sourcetree: MulleFoundation;no-singlephase;
-# Disable with: `mulle-sourcetree mark MulleFoundation no-link`
+# Disable with: `mulle-sourcetree mark MulleFoundation no-header`
 #
 if( NOT MULLE_FOUNDATION_LIBRARY)
    find_library( MULLE_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -178,7 +178,7 @@ endif()
 
 #
 # Generated from sourcetree: mulle-http;no-all-load,no-import,no-singlephase;
-# Disable with: `mulle-sourcetree mark mulle-http no-link`
+# Disable with: `mulle-sourcetree mark mulle-http no-header`
 #
 if( NOT MULLE_HTTP_LIBRARY)
    find_library( MULLE_HTTP_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-http${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-http NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)

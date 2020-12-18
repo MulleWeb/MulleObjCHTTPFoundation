@@ -12,8 +12,12 @@
 #ifndef _MulleObjCHTTPFoundation_import_private_h__
 #define _MulleObjCHTTPFoundation_import_private_h__
 
-#include "_MulleObjCHTTPFoundation-include-private.h"
-
 /* no headers */
+
+#ifdef __has_include
+# if __has_include( "_MulleObjCHTTPFoundation-include.h")
+#  include "_MulleObjCHTTPFoundation-include-private.h"
+# endif
+#endif
 
 #endif

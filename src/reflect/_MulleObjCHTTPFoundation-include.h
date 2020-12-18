@@ -13,12 +13,17 @@
 #define _MulleObjCHTTPFoundation_include_h__
 
 // How to tweak the following mulle-http #include
-//    remove:          `mulle-sourcetree mark mulle-http no-header`
-//    rename:          `mulle-sourcetree mark mulle-http set include whatever.h`
-//    toggle #import:  `mulle-sourcetree mark mulle-http [no-]import`
-//    toggle public:   `mulle-sourcetree mark mulle-http [no-]public`
-//    toggle optional: `mulle-sourcetree mark mulle-http [no-]require`
-//    remove for os:   `mulle-sourcetree mark mulle-http no-os-<osname>`
-# include <mulle-http/mulle-http.h>   // mulle-http
+//    remove:             `mulle-sourcetree mark mulle-http no-header`
+//    rename:             `mulle-sde dependency|library set mulle-http include whatever.h`
+//    toggle #import:     `mulle-sourcetree mark mulle-http [no-]import`
+//    toggle localheader: `mulle-sourcetree mark mulle-http [no-]localheader`
+//    toggle public:      `mulle-sourcetree mark mulle-http [no-]public`
+//    toggle optional:    `mulle-sourcetree mark mulle-http [no-]require`
+//    remove for os:      `mulle-sourcetree mark mulle-http no-os-<osname>`
+# if defined( __has_include) && __has_include("mulle-http.h")
+#   include "mulle-http.h"   // mulle-http
+# else
+#   include <mulle-http/mulle-http.h>   // mulle-http
+# endif
 
 #endif
