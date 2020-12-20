@@ -1,0 +1,18 @@
+{
+   "name" : "MulleObjCHTTPFoundation",
+   "version" : "0.18.0",
+   "description" : "🎫  HTTP and HTML utility methods and classes for mulle-objc",
+   "homepage" : "https://github.com/MulleWeb/MulleObjCHTTPFoundation",
+   "bugs" : "https://github.com/MulleWeb/MulleObjCHTTPFoundation/issues",
+   "keywords" : [],
+   "license" : "UNLICENSED",
+   "repository" : {
+      "type" : "git",
+      "url" : "MulleWeb/MulleObjCHTTPFoundation"
+   },
+   "dependencies" : {
+      "MulleObjCInetFoundation" : "MulleWeb/MulleObjCInetFoundation",
+      "MulleFoundation" : "MulleFoundation/MulleFoundation",
+      "mulle-http" : "mulle-c/mulle-http"
+   }
+}
