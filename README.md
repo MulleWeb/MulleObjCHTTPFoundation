@@ -1,6 +1,6 @@
 # MulleObjCHTTPFoundation
 
-#### 🎫  HTTP and HTML utility methods and classes for mulle-objc
+#### 🎫 HTTP and HTML utility methods and classes for mulle-objc
 
 Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 **NSString**.
