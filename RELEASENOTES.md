@@ -1,3 +1,8 @@
+## 0.18.0
+
+* Various small improvements
+
+
 ### 0.17.1
 
 * moved `http_parser` to mulle-c
