@@ -5,13 +5,6 @@
 Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 **NSString**.
 
-
-Build Status | Release Version
--------------|-----------------------------------
-[![Build Status](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleObjCHTTPFoundation.svg) [![Build Status](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation.svg?branch=release)](https://travis-ci.org/MulleWeb/MulleObjCHTTPFoundation)
-
-## About
-
 **NSString** gains these principal methods:
 
 ```
@@ -26,6 +19,25 @@ Build Status | Release Version
 ```
 
 **NSURL** is modified to parse HTTP URLs.
+
+
+### You are here
+
+```
+   .-------------------------------------------------------------------.
+   | Foundation                                                        |
+   '-------------------------------------------------------------------'
+   .=========..--------..------------------------..---------..---------.
+   | HTTP    || InetOS || MulleFoundation        || Expat   || JSMN    |
+   '=========''--------''------------------------''---------''---------'
+   .-------------..---------------------..-----------------------------.
+   | Inet        || OS                  || Plist                       |
+   '-------------''---------------------''-----------------------------'
+   .---------..--------------------------------------------------------.
+   | Lock    || Standard                                               |
+   '---------''--------------------------------------------------------'
+```
+
 
 
 ## Add

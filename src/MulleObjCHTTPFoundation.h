@@ -7,16 +7,9 @@
 //
 #import "import.h"
 
-#define MULLE_OBJC_HTTP_FOUNDATION_VERSION  ((0 << 20) | (18 << 8) | 0)
+#define MULLE_OBJC_HTTP_FOUNDATION_VERSION  ((0 << 20) | (18 << 8) | 1)
 
-// html ? not necessarily the proper place here...
-#import "NSDate+MulleHTTP.h"
-#import "NSString+HTML.h"
-#import "NSString+ListComponents.h"
-#import "MulleHTTP.h"
-#import "MulleHTTPHeaderParser.h"
-
-#import "MulleObjCLoader+MulleObjCHTTPFoundation.h"
+#import "_MulleObjCHTTPFoundation-export.h"
 
 // export nothing with _MulleObjC
 #if MULLE_OBJC_INET_FOUNDATION_VERSION < ((0 << 20) | (17 << 8) | 0)
