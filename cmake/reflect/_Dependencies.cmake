@@ -15,7 +15,7 @@ endif()
 #
 # Generated from sourcetree: BB851E0A-3CD2-4E83-B76D-87124F74F3E4;mulle-http;no-all-load,no-cmake-inherit,no-cmake-searchpath,no-import,no-singlephase;
 # Disable with : `mulle-sourcetree mark mulle-http no-link`
-# Disable for this platform: `mulle-sourcetree mark mulle-http no-cmake-platform-linux`
+# Disable for this platform: `mulle-sourcetree mark mulle-http no-cmake-platform-darwin`
 #
 if( NOT MULLE_HTTP_LIBRARY)
    find_library( MULLE_HTTP_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-http${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-http NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
@@ -45,7 +45,7 @@ endif()
 #
 # Generated from sourcetree: E98016C0-6BAC-41FC-A2B9-7376631179F8;MulleObjCInetFoundation;no-singlephase;
 # Disable with : `mulle-sourcetree mark MulleObjCInetFoundation no-link`
-# Disable for this platform: `mulle-sourcetree mark MulleObjCInetFoundation no-cmake-platform-linux`
+# Disable for this platform: `mulle-sourcetree mark MulleObjCInetFoundation no-cmake-platform-darwin`
 #
 if( NOT MULLE_OBJC_INET_FOUNDATION_LIBRARY)
    find_library( MULLE_OBJC_INET_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCInetFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
