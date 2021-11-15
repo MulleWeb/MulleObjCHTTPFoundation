@@ -18,7 +18,7 @@
 
 @implementation NSObject( CStringDescription)
 
-- (char *) cStringDescription
+- (char *) UTF8String
 {
    return( [[self description] UTF8String]);
 }
@@ -30,20 +30,20 @@ static void   print_url( NSURL  *url)
 {
    char  *s;
 
-   printf( "Scheme            : %s\n", (s = [[url scheme] cStringDescription]) ? s : "*nil*");
-   printf( "User              : %s\n", (s = [[url user] cStringDescription]) ? s : "*nil*");
-   printf( "Password          : %s\n", (s = [[url password] cStringDescription]) ? s : "*nil*");
-   printf( "Host              : %s\n", (s = [[url host] cStringDescription]) ? s : "*nil*");
+   printf( "Scheme            : %s\n", (s = [[url scheme] UTF8String]) ? s : "*nil*");
+   printf( "User              : %s\n", (s = [[url user] UTF8String]) ? s : "*nil*");
+   printf( "Password          : %s\n", (s = [[url password] UTF8String]) ? s : "*nil*");
+   printf( "Host              : %s\n", (s = [[url host] UTF8String]) ? s : "*nil*");
    printf( "Port              : %ld\n",[[url port] longValue]);
-   printf( "Path              : %s\n", (s = [[url path] cStringDescription]) ? s : "*nil*");
-   printf( "Parameter         : %s\n", (s = [[url parameterString] cStringDescription]) ? s : "*nil*");
-   printf( "Query             : %s\n", (s = [[url query] cStringDescription]) ? s : "*nil*");
-   printf( "Fragment          : %s\n", (s = [[url fragment] cStringDescription]) ? s : "*nil*");
-   printf( "ResourceSpecifier : %s\n", (s = [[url resourceSpecifier] cStringDescription]) ? s : "*nil*");
-   printf( "RelativePath      : %s\n", (s = [[url relativePath] cStringDescription]) ? s : "*nil*");
-   printf( "RelativeString    : %s\n", (s = [[url relativeString] cStringDescription]) ? s : "*nil*");
-   printf( "Base              : %s\n", (s = [[[url baseURL] description] cStringDescription]) ? s : "*nil*");
-   printf( "Absolute          : %s\n", (s = [[url absoluteString] cStringDescription]) ? s : "*nil*");
+   printf( "Path              : %s\n", (s = [[url path] UTF8String]) ? s : "*nil*");
+   printf( "Parameter         : %s\n", (s = [[url parameterString] UTF8String]) ? s : "*nil*");
+   printf( "Query             : %s\n", (s = [[url query] UTF8String]) ? s : "*nil*");
+   printf( "Fragment          : %s\n", (s = [[url fragment] UTF8String]) ? s : "*nil*");
+   printf( "ResourceSpecifier : %s\n", (s = [[url resourceSpecifier] UTF8String]) ? s : "*nil*");
+   printf( "RelativePath      : %s\n", (s = [[url relativePath] UTF8String]) ? s : "*nil*");
+   printf( "RelativeString    : %s\n", (s = [[url relativeString] UTF8String]) ? s : "*nil*");
+   printf( "Base              : %s\n", (s = [[[url baseURL] description] UTF8String]) ? s : "*nil*");
+   printf( "Absolute          : %s\n", (s = [[url absoluteString] UTF8String]) ? s : "*nil*");
 }
 
 
@@ -58,10 +58,10 @@ static NSURL  *test( NSURL *baseURL, NSString *string)
    [url mulleDump];
 #endif
 
-   printf( "String: %s baseURL: %s -> <%s> %s\n", (s = [string cStringDescription]) ? s : "*nil*",
-                                                  (s = [[baseURL description] cStringDescription]) ? s : "*nil*",
-                                                  (s = [NSStringFromClass([ url class]) cStringDescription]) ? s : "*nil*",
-                                                  (s = [[url description] cStringDescription]) ? s : "*nil*");
+   printf( "String: %s baseURL: %s -> <%s> %s\n", (s = [string UTF8String]) ? s : "*nil*",
+                                                  (s = [[baseURL description] UTF8String]) ? s : "*nil*",
+                                                  (s = [NSStringFromClass([ url class]) UTF8String]) ? s : "*nil*",
+                                                  (s = [[url description] UTF8String]) ? s : "*nil*");
    if( url)
       print_url( url);
    printf( "\n");
