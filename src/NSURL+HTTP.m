@@ -69,10 +69,10 @@ MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCValueFoundation);
 
 
 - (instancetype) mulleInitHTTPURLWithHTTPParserURL:(struct http_parser_url *)  url
-                                    UTF8Characters:(mulle_utf8_t *) utf
+                                    UTF8Characters:(char *) utf
                                             length:(NSUInteger) length
 {
-   mulle_utf8_t                      *c_substring;
+   char                             *c_substring;
    size_t                            c_substring_len;
    unsigned int                      i;
    struct MulleEscapedURLPartsUTF8   parts;
@@ -104,7 +104,8 @@ MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCValueFoundation);
                          parts.escaped_host.length     = c_substring_len;
                          break;
 
-      case UF_USERINFO : parts.escaped_password.characters = mulle_utf8_strnchr( c_substring, c_substring_len, ':');
+      case UF_USERINFO : parts.escaped_password.characters = (char *)
+                            mulle_utf8_strnchr( (mulle_utf8_t *) c_substring, c_substring_len, ':');
                          if( parts.escaped_password.characters)
                          {
                             ++parts.escaped_password.characters;
@@ -116,7 +117,8 @@ MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCValueFoundation);
                          break;
 
       // need to parse this into path/parameterString part
-      case UF_PATH     : parts.escaped_parameter.characters = mulle_utf8_strnchr( c_substring, c_substring_len, ';');
+      case UF_PATH     : parts.escaped_parameter.characters = (char *)
+                            mulle_utf8_strnchr( (mulle_utf8_t *) c_substring, c_substring_len, ';');
                          if( parts.escaped_parameter.characters)
                          {
                             ++parts.escaped_parameter.characters;
