@@ -139,12 +139,12 @@ enum MulleHTTPHeaderParserState
    return( _response);
 }
 
-- (mulle_utf8_t *) parseResponse:(mulle_utf8_t *) s
-                        sentinel:(mulle_utf8_t *) sentinel
+- (char *) parseResponse:(char *) s
+                sentinel:(char *) sentinel
 {
-   mulle_utf8_t   *value_start;
-   mulle_utf8_t   *value_end;
-   int            c;
+   char  *value_start;
+   char  *value_end;
+   int    c;
 
    value_start = s;
    while( s < sentinel)
@@ -173,18 +173,18 @@ enum MulleHTTPHeaderParserState
 }
 
 
-- (mulle_utf8_t *) parseHeaderLines:(mulle_utf8_t *) s
-                           sentinel:(mulle_utf8_t *) sentinel
+- (char *) parseHeaderLines:(char *) s
+                   sentinel:(char *) sentinel
 {
-   mulle_utf8_t   *start;
-   mulle_utf8_t   *key_start;
-   mulle_utf8_t   *key_end;
-   mulle_utf8_t   *value_start;
-   mulle_utf8_t   *value_end;
-   mulle_utf8_t   *last;
-   NSString       *key;
-   NSString       *value;
-   int            c;
+   char       *start;
+   char       *key_start;
+   char       *key_end;
+   char       *value_start;
+   char       *value_end;
+   char       *last;
+   NSString   *key;
+   NSString   *value;
+   int        c;
 
    last = s;
    for(;;)
@@ -275,17 +275,13 @@ enum MulleHTTPHeaderParserState
 
 - (void) parse
 {
-   mulle_utf8_t   *s;
-   mulle_utf8_t   *start;
-   mulle_utf8_t   *key_start;
-   mulle_utf8_t   *key_end;
-   mulle_utf8_t   *value_start;
-   mulle_utf8_t   *value_end;
-   mulle_utf8_t   *last;
-   mulle_utf8_t   *sentinel;
-   NSString       *key;
-   NSString       *value;
-   int            c;
+   char       *s;
+   char       *start;
+   char       *last;
+   char       *sentinel;
+   NSString   *key;
+   NSString   *value;
+   int        c;
 
    //
    // get what is in data, parse as much as we can
