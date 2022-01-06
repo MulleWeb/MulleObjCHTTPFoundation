@@ -64,7 +64,7 @@ int   main( int argc, const char * argv[])
 
    /**/
    memset( &parts, 0, sizeof( parts));
-   parts.escaped_query.characters = (mulle_utf8_t *) "a=1";
+   parts.escaped_query.characters = "a=1";
    parts.escaped_query.length     = -1;
 
    url = [[[NSURL alloc] mulleInitWithEscapedURLPartsUTF8:&parts
@@ -74,7 +74,7 @@ int   main( int argc, const char * argv[])
 
    /**/
    memset( &parts, 0, sizeof( parts));
-   parts.escaped_query.characters = (mulle_utf8_t *) "a=1;b=3";
+   parts.escaped_query.characters = "a=1;b=3";
    parts.escaped_query.length     = -1;
 
    url = [[[NSURL alloc] mulleInitWithEscapedURLPartsUTF8:&parts
@@ -83,7 +83,7 @@ int   main( int argc, const char * argv[])
 
    /**/
    memset( &parts, 0, sizeof( parts));
-   parts.escaped_query.characters = (mulle_utf8_t *) "a=1;b=1%202%203";
+   parts.escaped_query.characters = "a=1;b=1%202%203";
    parts.escaped_query.length     = -1;
 
    url = [[[NSURL alloc] mulleInitWithEscapedURLPartsUTF8:&parts
