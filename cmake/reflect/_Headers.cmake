@@ -60,5 +60,6 @@ src/MulleObjCLoader+MulleObjCHTTPFoundation.h
 src/NSDate+MulleHTTP.h
 src/NSString+HTML.h
 src/NSString+ListComponents.h
+src/reflect/_MulleObjCHTTPFoundation-versioncheck.h
 )
 
