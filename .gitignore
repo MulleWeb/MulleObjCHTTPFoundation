@@ -54,3 +54,6 @@ tmp.*/
 
 *.sublime-workspace
 MulleObjCHTTPFoundation.code-workspace
+.mulle-make-build-dir
+version.old
+.gdb_history

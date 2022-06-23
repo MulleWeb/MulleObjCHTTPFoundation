@@ -3,7 +3,7 @@
  *   Any edits will be lost.
  */
 #if defined( MULLE_HTTP_VERSION)
-# if MULLE_HTTP_VERSION < ((0 << 20) | (1 << 8) | 3)
+# if MULLE_HTTP_VERSION < ((0 << 20) | (1 << 8) | 4)
 #  error "mulle-http is too old"
 # endif
 # if MULLE_HTTP_VERSION >= ((0 << 20) | (2 << 8) | 0)
@@ -12,7 +12,7 @@
 #endif
 
 #if defined( MULLE_OBJC_INET_FOUNDATION_VERSION)
-# if MULLE_OBJC_INET_FOUNDATION_VERSION < ((0 << 20) | (18 << 8) | 2)
+# if MULLE_OBJC_INET_FOUNDATION_VERSION < ((0 << 20) | (18 << 8) | 3)
 #  error "MulleObjCInetFoundation is too old"
 # endif
 # if MULLE_OBJC_INET_FOUNDATION_VERSION >= ((0 << 20) | (19 << 8) | 0)
