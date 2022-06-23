@@ -17,7 +17,7 @@ endif()
 # Disable for this platform: `mulle-sourcetree mark mulle-http no-cmake-platform-${MULLE_UNAME}`
 #
 if( NOT MULLE_HTTP_LIBRARY)
-   find_library( MULLE_HTTP_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-http${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-http NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
+   find_library( MULLE_HTTP_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-http${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-http${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-http NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
    message( STATUS "MULLE_HTTP_LIBRARY is ${MULLE_HTTP_LIBRARY}")
    #
    # The order looks ascending, but due to the way this file is read
@@ -47,7 +47,7 @@ endif()
 # Disable for this platform: `mulle-sourcetree mark MulleObjCInetFoundation no-cmake-platform-${MULLE_UNAME}`
 #
 if( NOT MULLE_OBJC_INET_FOUNDATION_LIBRARY)
-   find_library( MULLE_OBJC_INET_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCInetFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
+   find_library( MULLE_OBJC_INET_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetFoundation${CMAKE_DEBUG_POSTFIX}${CMAKE_STATIC_LIBRARY_SUFFIX} ${CMAKE_STATIC_LIBRARY_PREFIX}MulleObjCInetFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleObjCInetFoundation NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH)
    message( STATUS "MULLE_OBJC_INET_FOUNDATION_LIBRARY is ${MULLE_OBJC_INET_FOUNDATION_LIBRARY}")
    #
    # The order looks ascending, but due to the way this file is read
