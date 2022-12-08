@@ -7,14 +7,14 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 
 **NSString** gains these principal methods:
 
-```
+``` objc
 - (NSString *) mulleStringByEscapingHTML;
 - (NSString *) mulleStringByUnescapingHTML;
 ```
 
 **NData** gains this method:
 
-```
+``` objc
 - (NSString *) mulleHTTPDescription;
 ```
 
@@ -33,7 +33,7 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 
 Use [mulle-sde](//github.com/mulle-sde) to add MulleObjCHTTPFoundation to your project:
 
-```
+``` sh
 mulle-sde dependency add --c --github MulleWeb MulleObjCHTTPFoundation
 ```
 
@@ -49,7 +49,7 @@ installation instructions.
 Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCHTTPFoundation
 and all its dependencies:
 
-```
+``` sh
 mulle-sde install --linkorder --objc --prefix /usr/local \
    https://github.com/MulleWeb/MulleObjCHTTPFoundation/archive/latest.tar.gz
 ```
