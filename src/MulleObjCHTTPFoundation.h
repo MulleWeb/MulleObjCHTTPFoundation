@@ -7,7 +7,7 @@
 //
 #import "import.h"
 
-#define MULLE_OBJC_HTTP_FOUNDATION_VERSION  ((0 << 20) | (18 << 8) | 3)
+#define MULLE_OBJC_HTTP_FOUNDATION_VERSION  ((0 << 20) | (18 << 8) | 4)
 
 #import "_MulleObjCHTTPFoundation-export.h"
 
