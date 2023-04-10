@@ -2,8 +2,20 @@
 
 #### 🎫 HTTP and HTML utility methods and classes for mulle-objc
 
+
 Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 **NSString**.
+
+| Release Version                                       | Release Notes
+|-------------------------------------------------------|--------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//MulleObjCHTTPFoundation.svg?branch=release) [![Build Status](https://github.com//MulleObjCHTTPFoundation/workflows/CI/badge.svg?branch=release)](//github.com//MulleObjCHTTPFoundation/actions)| [RELEASENOTES](RELEASENOTES.md) |
+
+
+
+
+
+
+## API
 
 **NSString** gains these principal methods:
 
@@ -22,11 +34,15 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 
 
 
-### You are here
 
+
+## Overview
 ![Overview](overview.dot.svg)
 
-
+| Requirement                                  | Description
+|----------------------------------------------|-----------------------
+| [MulleObjCInetFoundation](https://github.com/MulleWeb/MulleObjCInetFoundation)             | 📠 Internet-related classes like NSHost and NSURL for mulle-objc
+| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list)             | 📒 Lists mulle-objc runtime information contained in executables.
 
 
 ## Add
@@ -34,50 +50,43 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 Use [mulle-sde](//github.com/mulle-sde) to add MulleObjCHTTPFoundation to your project:
 
 ``` sh
-mulle-sde dependency add --c --github MulleWeb MulleObjCHTTPFoundation
+mulle-sde add github:MulleWeb/MulleObjCHTTPFoundation
 ```
 
 ## Install
 
-**MulleObjCHTTPFoundation** is part of **Foundation**, see
-[foundation-developer](//github.com/MulleFoundation/foundation-developer) for
-installation instructions.
+### Install with mulle-sde
 
-
-### Manual install
-
-Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCHTTPFoundation
-and all its dependencies:
+Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCHTTPFoundation and all dependencies:
 
 ``` sh
-mulle-sde install --linkorder --objc --prefix /usr/local \
-   https://github.com/MulleWeb/MulleObjCHTTPFoundation/archive/latest.tar.gz
+mulle-sde install --prefix /usr/local \
+   https://github.com//MulleObjCHTTPFoundation/archive/latest.tar.gz
 ```
 
+### Manual Installation
 
-## Acknowledgments
+Install the [requirements](#Overview) and then install
+**MulleObjCHTTPFoundation**
+with [cmake](https://cmake.org). Here `/usr/local` is chosen as the install
+prefix:
 
-
-The HTML escaping code of this library:
-
-```
-Copyright 2008 Google Inc.
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy
-of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+``` sh
+cmake -B build \
+      -DCMAKE_INSTALL_PREFIX=/usr/local \
+      -DCMAKE_PREFIX_PATH=/usr/local \
+      -DCMAKE_BUILD_TYPE=Release &&
+cmake --build build --config Release &&
+cmake --install build --config Release
 ```
 
-## Authors
+## Platforms and Compilers
 
-[Nat!](//www.mulle-kybernetik.com/weblog) for
-[Mulle kybernetiK](//www.mulle-kybernetik.com) and
-[Codeon GmbH](//www.codeon.de)
+All platforms and compilers supported by
+[mulle-c11](//github.com/mulle-c/mulle-c11).
+
+
+## Author
+
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+

@@ -14,16 +14,6 @@
 #ifndef _mulle_objc_http_foundation_include_h__
 #define _mulle_objc_http_foundation_include_h__
 
-// You can tweak the following #include with these commands.
-// (Use BB851E0A-3CD2-4E83-B76D-87124F74F3E4 instead of mulle-http if there are duplicate entries)
-//    remove #include:: `mulle-sde dependency mark mulle-http no-header`
-//    rename:              `mulle-sde dependency|library set mulle-http include whatever.h`
-//    reorder:             `mulle-sde dependency move mulle-http <up|down>`
-//    toggle #include:    `mulle-sde dependency mark mulle-http [no-]import`
-//    toggle public:       `mulle-sde dependency mark mulle-http [no-]public`
-//    toggle optional:     `mulle-sde dependency mark mulle-http [no-]require`
-//    remove for platform: `mulle-sde dependency mark mulle-http no-platform-<uname>`
-//        (use `mulle-sourcetree-to-c --unames` to list known values)
-#include <mulle-http/mulle-http.h>   // mulle-http
+/* no headers */
 
 #endif
