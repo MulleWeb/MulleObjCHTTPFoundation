@@ -1,0 +1,19 @@
+## API
+
+**NSString** gains these principal methods:
+
+``` objc
+- (NSString *) mulleStringByEscapingHTML;
+- (NSString *) mulleStringByUnescapingHTML;
+```
+
+**NData** gains this method:
+
+``` objc
+- (NSString *) mulleHTTPDescription;
+```
+
+**NSURL** is modified to parse HTTP URLs.
+
+
+

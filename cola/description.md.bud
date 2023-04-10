@@ -1,0 +1,2 @@
+Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
+**NSString**.
