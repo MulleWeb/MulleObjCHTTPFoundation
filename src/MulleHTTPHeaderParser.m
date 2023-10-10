@@ -176,7 +176,6 @@ enum MulleHTTPHeaderParserState
 - (char *) parseHeaderLines:(char *) s
                    sentinel:(char *) sentinel
 {
-   char       *start;
    char       *key_start;
    char       *key_end;
    char       *value_start;
@@ -275,13 +274,9 @@ enum MulleHTTPHeaderParserState
 
 - (void) parse
 {
-   char       *s;
-   char       *start;
-   char       *last;
-   char       *sentinel;
-   NSString   *key;
-   NSString   *value;
-   int        c;
+   char   *s;
+   char   *start;
+   char   *sentinel;
 
    //
    // get what is in data, parse as much as we can
