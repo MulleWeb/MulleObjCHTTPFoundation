@@ -105,7 +105,7 @@ MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCValueFoundation);
                          break;
 
       case UF_USERINFO : parts.escaped_password.characters = (char *)
-                            mulle_utf8_strnchr( (mulle_utf8_t *) c_substring, c_substring_len, ':');
+                            mulle_utf8_strnchr( c_substring, c_substring_len, ':');
                          if( parts.escaped_password.characters)
                          {
                             ++parts.escaped_password.characters;
@@ -118,7 +118,7 @@ MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCValueFoundation);
 
       // need to parse this into path/parameterString part
       case UF_PATH     : parts.escaped_parameter.characters = (char *)
-                            mulle_utf8_strnchr( (mulle_utf8_t *) c_substring, c_substring_len, ';');
+                            mulle_utf8_strnchr( c_substring, c_substring_len, ';');
                          if( parts.escaped_parameter.characters)
                          {
                             ++parts.escaped_parameter.characters;
