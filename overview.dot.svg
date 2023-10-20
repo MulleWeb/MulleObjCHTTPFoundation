@@ -57,7 +57,7 @@
 <!-- MulleObjCArchiverFoundation -->
 <g id="node4" class="node">
 <title>MulleObjCArchiverFoundation</title>
-<g id="a_node4"><a xlink:href="https://github.com/MulleFoundation/MulleObjCArchiverFoundation" xlink:title="MulleObjCArchiverFoundation">
+<g id="a_node4"><a xlink:href="https://github.com/MulleFoundation/MulleObjCArchiverFoundation@*" xlink:title="MulleObjCArchiverFoundation">
 <polygon fill="lightgrey" stroke="black" points="495.5,-108 262.5,-108 262.5,-72 495.5,-72 495.5,-108"/>
 <text text-anchor="middle" x="379" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCArchiverFoundation</text>
 </a>
@@ -72,7 +72,7 @@
 <!-- MulleObjCContainerFoundation -->
 <g id="node5" class="node">
 <title>MulleObjCContainerFoundation</title>
-<g id="a_node5"><a xlink:href="https://github.com/MulleFoundation/MulleObjCContainerFoundation" xlink:title="MulleObjCContainerFoundation">
+<g id="a_node5"><a xlink:href="https://github.com/MulleFoundation/MulleObjCContainerFoundation@*" xlink:title="MulleObjCContainerFoundation">
 <polygon fill="lightgrey" stroke="black" points="756.5,-108 513.5,-108 513.5,-72 756.5,-72 756.5,-108"/>
 <text text-anchor="middle" x="635" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCContainerFoundation</text>
 </a>
@@ -87,7 +87,7 @@
 <!-- MulleObjCKVCFoundation -->
 <g id="node6" class="node">
 <title>MulleObjCKVCFoundation</title>
-<g id="a_node6"><a xlink:href="https://github.com/MulleFoundation/MulleObjCKVCFoundation" xlink:title="MulleObjCKVCFoundation">
+<g id="a_node6"><a xlink:href="https://github.com/MulleFoundation/MulleObjCKVCFoundation@*" xlink:title="MulleObjCKVCFoundation">
 <polygon fill="lightgrey" stroke="black" points="977.5,-108 774.5,-108 774.5,-72 977.5,-72 977.5,-108"/>
 <text text-anchor="middle" x="876" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCKVCFoundation</text>
 </a>
@@ -102,7 +102,7 @@
 <!-- MulleObjCLockFoundation -->
 <g id="node7" class="node">
 <title>MulleObjCLockFoundation</title>
-<g id="a_node7"><a xlink:href="https://github.com/MulleFoundation/MulleObjCLockFoundation" xlink:title="MulleObjCLockFoundation">
+<g id="a_node7"><a xlink:href="https://github.com/MulleFoundation/MulleObjCLockFoundation@*" xlink:title="MulleObjCLockFoundation">
 <polygon fill="lightgrey" stroke="black" points="1202,-108 996,-108 996,-72 1202,-72 1202,-108"/>
 <text text-anchor="middle" x="1099" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCLockFoundation</text>
 </a>
@@ -117,7 +117,7 @@
 <!-- MulleObjCMathFoundation -->
 <g id="node8" class="node">
 <title>MulleObjCMathFoundation</title>
-<g id="a_node8"><a xlink:href="https://github.com/MulleFoundation/MulleObjCMathFoundation" xlink:title="MulleObjCMathFoundation">
+<g id="a_node8"><a xlink:href="https://github.com/MulleFoundation/MulleObjCMathFoundation@*" xlink:title="MulleObjCMathFoundation">
 <polygon fill="lightgrey" stroke="black" points="1430,-108 1220,-108 1220,-72 1430,-72 1430,-108"/>
 <text text-anchor="middle" x="1325" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCMathFoundation</text>
 </a>
@@ -132,7 +132,7 @@
 <!-- MulleObjCPlistFoundation -->
 <g id="node9" class="node">
 <title>MulleObjCPlistFoundation</title>
-<g id="a_node9"><a xlink:href="https://github.com/MulleFoundation/MulleObjCPlistFoundation" xlink:title="MulleObjCPlistFoundation">
+<g id="a_node9"><a xlink:href="https://github.com/MulleFoundation/MulleObjCPlistFoundation@*" xlink:title="MulleObjCPlistFoundation">
 <polygon fill="lightgrey" stroke="black" points="1653.5,-108 1448.5,-108 1448.5,-72 1653.5,-72 1653.5,-108"/>
 <text text-anchor="middle" x="1551" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCPlistFoundation</text>
 </a>
@@ -147,7 +147,7 @@
 <!-- MulleObjCStandardFoundation -->
 <g id="node10" class="node">
 <title>MulleObjCStandardFoundation</title>
-<g id="a_node10"><a xlink:href="https://github.com/MulleFoundation/MulleObjCStandardFoundation" xlink:title="MulleObjCStandardFoundation">
+<g id="a_node10"><a xlink:href="https://github.com/MulleFoundation/MulleObjCStandardFoundation@*" xlink:title="MulleObjCStandardFoundation">
 <polygon fill="lightgrey" stroke="black" points="1910.5,-108 1671.5,-108 1671.5,-72 1910.5,-72 1910.5,-108"/>
 <text text-anchor="middle" x="1791" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCStandardFoundation</text>
 </a>
@@ -162,7 +162,7 @@
 <!-- MulleObjCTimeFoundation -->
 <g id="node11" class="node">
 <title>MulleObjCTimeFoundation</title>
-<g id="a_node11"><a xlink:href="https://github.com/MulleFoundation/MulleObjCTimeFoundation" xlink:title="MulleObjCTimeFoundation">
+<g id="a_node11"><a xlink:href="https://github.com/MulleFoundation/MulleObjCTimeFoundation@*" xlink:title="MulleObjCTimeFoundation">
 <polygon fill="lightgrey" stroke="black" points="2137,-108 1929,-108 1929,-72 2137,-72 2137,-108"/>
 <text text-anchor="middle" x="2033" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCTimeFoundation</text>
 </a>
@@ -177,7 +177,7 @@
 <!-- MulleObjCUnicodeFoundation -->
 <g id="node12" class="node">
 <title>MulleObjCUnicodeFoundation</title>
-<g id="a_node12"><a xlink:href="https://github.com/MulleFoundation/MulleObjCUnicodeFoundation" xlink:title="MulleObjCUnicodeFoundation">
+<g id="a_node12"><a xlink:href="https://github.com/MulleFoundation/MulleObjCUnicodeFoundation@*" xlink:title="MulleObjCUnicodeFoundation">
 <polygon fill="lightgrey" stroke="black" points="2386.5,-108 2155.5,-108 2155.5,-72 2386.5,-72 2386.5,-108"/>
 <text text-anchor="middle" x="2271" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCUnicodeFoundation</text>
 </a>
@@ -192,7 +192,7 @@
 <!-- MulleObjCUUIDFoundation -->
 <g id="node13" class="node">
 <title>MulleObjCUUIDFoundation</title>
-<g id="a_node13"><a xlink:href="https://github.com/MulleFoundation/MulleObjCUUIDFoundation" xlink:title="MulleObjCUUIDFoundation">
+<g id="a_node13"><a xlink:href="https://github.com/MulleFoundation/MulleObjCUUIDFoundation@*" xlink:title="MulleObjCUUIDFoundation">
 <polygon fill="lightgrey" stroke="black" points="2617.5,-108 2404.5,-108 2404.5,-72 2617.5,-72 2617.5,-108"/>
 <text text-anchor="middle" x="2511" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCUUIDFoundation</text>
 </a>
@@ -207,7 +207,7 @@
 <!-- MulleObjCValueFoundation -->
 <g id="node14" class="node">
 <title>MulleObjCValueFoundation</title>
-<g id="a_node14"><a xlink:href="https://github.com/MulleFoundation/MulleObjCValueFoundation" xlink:title="MulleObjCValueFoundation">
+<g id="a_node14"><a xlink:href="https://github.com/MulleFoundation/MulleObjCValueFoundation@*" xlink:title="MulleObjCValueFoundation">
 <polygon fill="lightgrey" stroke="black" points="2847,-108 2635,-108 2635,-72 2847,-72 2847,-108"/>
 <text text-anchor="middle" x="2741" y="-86.3" font-family="Times,serif" font-size="14.00">MulleObjCValueFoundation</text>
 </a>
