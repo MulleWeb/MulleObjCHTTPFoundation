@@ -11,15 +11,18 @@
  *
  */
 
-// You can tweak the following #import with these commands.
-// (Use E98016C0-6BAC-41FC-A2B9-7376631179F8 instead of MulleObjCInetFoundation if there are duplicate entries)
-//    remove #import: : `mulle-sde dependency mark MulleObjCInetFoundation no-header`
-//    rename:              `mulle-sde dependency|library set MulleObjCInetFoundation include whatever.h`
-//    reorder:             `mulle-sde dependency move MulleObjCInetFoundation <up|down>`
-//    toggle #import:     `mulle-sde dependency mark MulleObjCInetFoundation [no-]import`
-//    toggle public:       `mulle-sde dependency mark MulleObjCInetFoundation [no-]public`
-//    toggle optional:     `mulle-sde dependency mark MulleObjCInetFoundation [no-]require`
-//    remove for platform: `mulle-sde dependency mark MulleObjCInetFoundation no-platform-<uname>`
+// To remove the following dependency (headers and library) completely:
+//   `mulle-sde dependency remove MulleObjCInetFoundation`
+// (Use E98016C0-6BAC-41FC-A2B9-7376631179F8 instead of MulleObjCInetFoundation, if there are duplicate entries)
+//
+// You can tweak the following #import with these commands:
+//    remove #import      : `mulle-sde dependency mark MulleObjCInetFoundation no-header`
+//    rename              : `mulle-sde dependency|library set MulleObjCInetFoundation include whatever.h`
+//    reorder             : `mulle-sde dependency move MulleObjCInetFoundation <up|down>`
+//    toggle #import      : `mulle-sde dependency mark MulleObjCInetFoundation [no-]import`
+//    toggle public       : `mulle-sde dependency mark MulleObjCInetFoundation [no-]public`
+//    toggle optional     : `mulle-sde dependency mark MulleObjCInetFoundation [no-]require`
+//    remove for platform : `mulle-sde dependency mark MulleObjCInetFoundation no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #import <MulleObjCInetFoundation/MulleObjCInetFoundation.h>   // MulleObjCInetFoundation
 

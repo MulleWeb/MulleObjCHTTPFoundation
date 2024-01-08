@@ -1,0 +1,40 @@
+{
+   "name" : "MulleObjCHTTPFoundation",
+   "version" : "0.18.6",
+   "description" : "🎫 HTTP and HTML utility methods and classes for mulle-objc",
+   "keywords" : [],
+   "license" : "BSD-3-Clause",
+   "repo" : "MulleWeb/MulleObjCHTTPFoundation",
+   "src" : [
+      "src/generic/import-private.h",
+      "src/generic/import.h",
+      "src/generic/include-private.h",
+      "src/generic/include.h",
+      "src/MulleHTTP.h",
+      "src/MulleHTTPHeaderParser.h",
+      "src/MulleHTTPHeaderParser.m",
+      "src/MulleObjCHTTPFoundation.h",
+      "src/MulleObjCHTTPFoundation.m",
+      "src/MulleObjCLoader+MulleObjCHTTPFoundation.h",
+      "src/MulleObjCLoader+MulleObjCHTTPFoundation.m",
+      "src/NSDate+MulleHTTP.h",
+      "src/NSDate+MulleHTTP.m",
+      "src/NSString+HTML.h",
+      "src/NSString+HTML.m",
+      "src/NSString+ListComponents.h",
+      "src/NSString+ListComponents.m",
+      "src/NSURL+HTTP.m",
+      "src/reflect/objc-loader.inc",
+      "src/reflect/_MulleObjCHTTPFoundation-export.h",
+      "src/reflect/_MulleObjCHTTPFoundation-import-private.h",
+      "src/reflect/_MulleObjCHTTPFoundation-import.h",
+      "src/reflect/_MulleObjCHTTPFoundation-include-private.h",
+      "src/reflect/_MulleObjCHTTPFoundation-include.h",
+      "src/reflect/_MulleObjCHTTPFoundation-provide.h",
+      "src/reflect/_MulleObjCHTTPFoundation-versioncheck.h"
+   ],
+   "dependencies" : {
+      "MulleWeb/MulleObjCInetFoundation": "*",
+      "mulle-objc/mulle-objc-list": "*"
+   }
+}
