@@ -2,13 +2,13 @@
 
 #### 🎫 HTTP and HTML utility methods and classes for mulle-objc
 
-
 Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 **NSString**.
 
+
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//MulleObjCHTTPFoundation.svg?branch=release) [![Build Status](https://github.com//MulleObjCHTTPFoundation/workflows/CI/badge.svg?branch=release)](//github.com//MulleObjCHTTPFoundation/actions)| [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleObjCHTTPFoundation.svg?branch=release) [![Build Status](https://github.com/MulleWeb/MulleObjCHTTPFoundation/workflows/CI/badge.svg?branch=release)](//github.com/MulleWeb/MulleObjCHTTPFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
@@ -36,13 +36,9 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 
 
 
-## Overview
-![Overview](overview.dot.svg)
+### You are here
 
-| Requirement                                  | Description
-|----------------------------------------------|-----------------------
-| [MulleObjCInetFoundation](https://github.com/MulleWeb/MulleObjCInetFoundation)             | 📠 Internet-related classes like NSHost and NSURL for mulle-objc
-| [mulle-objc-list](https://github.com/mulle-objc/mulle-objc-list)             | 📒 Lists mulle-objc runtime information contained in executables.
+![Overview](overview.dot.svg)
 
 
 ## Add
@@ -86,7 +82,7 @@ cmake --build build --config Release &&
 cmake --install build --config Release
 ```
 
-## Platforms and Compilers
+### Platforms and Compilers
 
 All platforms and compilers supported by
 [mulle-c11](//github.com/mulle-c/mulle-c11).
@@ -94,5 +90,5 @@ All platforms and compilers supported by
 
 ## Author
 
-[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK  
 
