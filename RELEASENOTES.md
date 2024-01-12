@@ -1,3 +1,7 @@
+### 0.18.6
+
+* transition from `mulle_utf8_t` to char
+
 ### 0.18.5
 
 * Various small improvements
