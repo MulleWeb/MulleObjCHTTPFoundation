@@ -7,7 +7,7 @@
       user="MulleWeb";
       repo="MulleObjCHTTPFoundation";
       homepage="https://github.com/MulleWeb/MulleObjCHTTPFoundation";
-      license="BSD-3-Clause"
+      license="BSD-3-Clause";
    };
    dependencies =
    (
@@ -27,5 +27,5 @@
          url="https://github.com/mulle-objc/mulle-objc-list";
          user="mulle-objc";
       }
-   )
+   );
 }
