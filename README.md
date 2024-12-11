@@ -8,7 +8,7 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleObjCHTTPFoundation.svg?branch=release) [![Build Status](https://github.com/MulleWeb/MulleObjCHTTPFoundation/workflows/CI/badge.svg?branch=release)](//github.com/MulleWeb/MulleObjCHTTPFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleObjCHTTPFoundation.svg) [![Build Status](https://github.com/MulleWeb/MulleObjCHTTPFoundation/workflows/CI/badge.svg)](//github.com/MulleWeb/MulleObjCHTTPFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
