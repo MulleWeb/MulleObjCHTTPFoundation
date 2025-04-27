@@ -68,3 +68,5 @@ cola/wilted/
 *-build-*/
 .idea/
 CMakeLists.txt.bak
+.mulle/etc/make/build-dir
+vgcore.*
