@@ -6,9 +6,9 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 **NSString**.
 
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleObjCHTTPFoundation.svg) [![Build Status](https://github.com/MulleWeb/MulleObjCHTTPFoundation/workflows/CI/badge.svg)](//github.com/MulleWeb/MulleObjCHTTPFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| Release Version                                       | Release Notes  | AI Documentation
+|-------------------------------------------------------|----------------|---------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleObjCHTTPFoundation.svg) [![Build Status](https://github.com/MulleWeb/MulleObjCHTTPFoundation/workflows/CI/badge.svg)](//github.com/MulleWeb/MulleObjCHTTPFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for MulleObjCHTTPFoundation](https://deepwiki.com/MulleWeb/MulleObjCHTTPFoundation)
 
 
 
