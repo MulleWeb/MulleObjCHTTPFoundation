@@ -17,6 +17,7 @@
 #include <mulle-container/mulle-container.h>
 #include <mulle-container-debug/mulle-container-debug.h>
 #include <mulle-core/mulle-core.h>
+#include <mulle-core-all-load/mulle-core-all-load.h>
 #include <mulle-data/mulle-data.h>
 #include <mulle-dlfcn/mulle-dlfcn.h>
 #include <mulle-dtostr/mulle-dtostr.h>
@@ -33,6 +34,7 @@
 #include <MulleObjCLinuxFoundation/_MulleObjCLinuxFoundation-include.h>
 #include <MulleObjCLinuxFoundation/_MulleObjCLinuxFoundation-provide.h>
 #include <mulle-rbtree/mulle-rbtree.h>
+#include <mulle-rbtree-debug/mulle-rbtree-debug.h>
 #include <mulle-regex/mulle-regex.h>
 #include <mulle-slug/mulle-slug.h>
 #include <mulle-sprintf/mulle-sprintf.h>

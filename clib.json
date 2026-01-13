@@ -1,6 +1,6 @@
 {
    "name" : "MulleObjCHTTPFoundation",
-   "version" : "0.18.6",
+   "version" : "0.18.9",
    "description" : "🎫 HTTP and HTML utility methods and classes for mulle-objc",
    "keywords" : [],
    "license" : "BSD-3-Clause",
