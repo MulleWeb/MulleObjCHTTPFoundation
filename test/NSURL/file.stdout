@@ -1,196 +1,196 @@
-String: foo.txt baseURL: *nil* -> <NSURL> foo.txt
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+String: foo.txt baseURL: (nil) -> <NSURL> foo.txt
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : foo.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : foo.txt
 RelativePath      : foo.txt
 RelativeString    : foo.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : foo.txt
 
-String: ;param baseURL: *nil* -> <NSURL> ;param
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+String: ;param baseURL: (nil) -> <NSURL> ;param
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
+Path              : (nil)
 Parameter         : param
-Query             : *nil*
-Fragment          : *nil*
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ;param
-RelativePath      : *nil*
+RelativePath      : (nil)
 RelativeString    : ;param
-Base              : *nil*
+Base              : (nil)
 Absolute          : ;param
 
-String: file:///path/to/file;foo?bar baseURL: *nil* -> <NSURL> file:///path/to/file;foo?bar
+String: file:///path/to/file;foo?bar baseURL: (nil) -> <NSURL> file:///path/to/file;foo?bar
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /path/to/file;foo?bar
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /path/to/file;foo?bar
 RelativePath      : /path/to/file;foo?bar
 RelativeString    : file:///path/to/file;foo?bar
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:///path/to/file;foo?bar
 
-String: file:foo.txt baseURL: *nil* -> <NSURL> file:foo.txt
+String: file:foo.txt baseURL: (nil) -> <NSURL> file:foo.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : foo.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : foo.txt
 RelativePath      : foo.txt
 RelativeString    : foo.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:foo.txt
 
-String: file:foo space.txt baseURL: *nil* -> <*nil*> *nil*
+String: file:foo space.txt baseURL: (nil) -> <(nil)> (nil)
 
-String: file:///foo%20space.txt baseURL: *nil* -> <NSURL> file:///foo%20space.txt
+String: file:///foo%20space.txt baseURL: (nil) -> <NSURL> file:///foo%20space.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /foo space.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /foo space.txt
 RelativePath      : /foo space.txt
 RelativeString    : file:///foo%20space.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:///foo%20space.txt
 
-String: file://foo.com/foo%20space.txt baseURL: *nil* -> <NSURL> file://foo.com/foo%20space.txt
+String: file://foo.com/foo%20space.txt baseURL: (nil) -> <NSURL> file://foo.com/foo%20space.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : foo.com
 Port              : 0
 Path              : /foo space.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /foo space.txt
 RelativePath      : /foo space.txt
 RelativeString    : file://foo.com/foo%20space.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : file://foo.com/foo%20space.txt
 
 String: foo.txt#40 baseURL: file:///basepath/basecomponent;whatevs#20 -> <NSURL> file:///basepath/foo.txt#40
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /basepath/foo.txt
-Parameter         : *nil*
-Query             : *nil*
+Parameter         : (nil)
+Query             : (nil)
 Fragment          : 40
 ResourceSpecifier : /basepath/foo.txt#40
 RelativePath      : /basepath/foo.txt
 RelativeString    : file:///basepath/foo.txt#40
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:///basepath/foo.txt#40
 
 String: ///path/to/file;foo?bar baseURL: file:///basepath/basecomponent;whatevs#20 -> <NSURL> file://///path/to/file;foo?bar
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : ///path/to/file
 Parameter         : foo
 Query             : bar
-Fragment          : *nil*
+Fragment          : (nil)
 ResourceSpecifier : ///path/to/file;foo?bar
 RelativePath      : ///path/to/file
 RelativeString    : file://///path/to/file;foo?bar
-Base              : *nil*
+Base              : (nil)
 Absolute          : file://///path/to/file;foo?bar
 
 String: file:foo.txt baseURL: file:///basepath/basecomponent;whatevs#20 -> <NSURL> file:foo.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : foo.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : foo.txt
 RelativePath      : foo.txt
 RelativeString    : foo.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:foo.txt
 
 String: file:///foo.txt baseURL: file:///basepath/basecomponent;whatevs#20 -> <NSURL> file:///foo.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /foo.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /foo.txt
 RelativePath      : /foo.txt
 RelativeString    : file:///foo.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:///foo.txt
 
-String: foo space.txt baseURL: file:///basepath/basecomponent;whatevs#20 -> <*nil*> *nil*
+String: foo space.txt baseURL: file:///basepath/basecomponent;whatevs#20 -> <(nil)> (nil)
 
 String: /foo%20space.txt baseURL: file:///basepath/basecomponent;whatevs#20 -> <NSURL> file:///foo%20space.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /foo space.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /foo space.txt
 RelativePath      : /foo space.txt
 RelativeString    : file:///foo%20space.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:///foo%20space.txt
 
 String: ;foo%20space.txt baseURL: file:///basepath/basecomponent;whatevs#20 -> <NSURL> file:///basepath/basecomponent;whatevs#20;foo%20space.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /basepath/basecomponent;whatevs#20
 Parameter         : foo space.txt
-Query             : *nil*
-Fragment          : *nil*
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /basepath/basecomponent;whatevs#20;foo space.txt
 RelativePath      : /basepath/basecomponent;whatevs#20
 RelativeString    : file:///basepath/basecomponent;whatevs#20;foo%20space.txt
-Base              : *nil*
+Base              : (nil)
 Absolute          : file:///basepath/basecomponent;whatevs#20;foo%20space.txt
 

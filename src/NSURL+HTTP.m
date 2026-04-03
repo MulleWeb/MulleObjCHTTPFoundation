@@ -72,6 +72,7 @@ MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCValueFoundation);
                                     UTF8Characters:(char *) utf
                                             length:(NSUInteger) length
 {
+   MULLE_C_UNUSED( length );
    char                             *c_substring;
    size_t                            c_substring_len;
    unsigned int                      i;

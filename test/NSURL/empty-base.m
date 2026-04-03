@@ -12,45 +12,35 @@
 # import <Foundation/Foundation.h>
 #endif
 
-@interface NSObject( CStringDescription)
-@end
+@interface NSObject( ForwardDeclaration)
 
-
-@implementation NSObject( CStringDescription)
-
-- (char *) UTF8String
-{
-   return( [[self description] UTF8String]);
-}
+- (void) mulleDump;
 
 @end
 
 
 static void   print_url( NSURL  *url)
 {
-   char  *s;
-
-   printf( "Scheme            : %s\n", (s = [[url scheme] UTF8String]) ? s : "*nil*");
-   printf( "User              : %s\n", (s = [[url user] UTF8String]) ? s : "*nil*");
-   printf( "Password          : %s\n", (s = [[url password] UTF8String]) ? s : "*nil*");
-   printf( "Host              : %s\n", (s = [[url host] UTF8String]) ? s : "*nil*");
-   printf( "Port              : %ld\n",[[url port] longValue]);
-   printf( "Path              : %s\n", (s = [[url path] UTF8String]) ? s : "*nil*");
-   printf( "Parameter         : %s\n", (s = [[url parameterString] UTF8String]) ? s : "*nil*");
-   printf( "Query             : %s\n", (s = [[url query] UTF8String]) ? s : "*nil*");
-   printf( "Fragment          : %s\n", (s = [[url fragment] UTF8String]) ? s : "*nil*");
-   printf( "ResourceSpecifier : %s\n", (s = [[url resourceSpecifier] UTF8String]) ? s : "*nil*");
-   printf( "RelativePath      : %s\n", (s = [[url relativePath] UTF8String]) ? s : "*nil*");
-   printf( "RelativeString    : %s\n", (s = [[url relativeString] UTF8String]) ? s : "*nil*");
-   printf( "Base              : %s\n", (s = [[[url baseURL] description] UTF8String]) ? s : "*nil*");
-   printf( "Absolute          : %s\n", (s = [[url absoluteString] UTF8String]) ? s : "*nil*");
+   mulle_printf( "Scheme            : %@\n", [url scheme]);
+   mulle_printf( "User              : %@\n", [url user]);
+   mulle_printf( "Password          : %@\n", [url password]);
+   mulle_printf( "Host              : %@\n", [url host]);
+   mulle_printf( "Port              : %td\n", [url port]);
+   mulle_printf( "Path              : %@\n", [url path]);
+   mulle_printf( "Parameter         : %@\n", [url parameterString]);
+   mulle_printf( "Query             : %@\n", [url query]);
+   mulle_printf( "Fragment          : %@\n", [url fragment]);
+   mulle_printf( "ResourceSpecifier : %@\n", [url resourceSpecifier]);
+   mulle_printf( "RelativePath      : %@\n", [url relativePath]);
+   mulle_printf( "RelativeString    : %@\n", [url relativeString]);
+   mulle_printf( "Base              : %@\n", [[url baseURL] description]);
+   mulle_printf( "Absolute          : %@\n", [url absoluteString]);
 }
 
 
 static NSURL  *test( NSURL *baseURL, NSString *string)
 {
    NSURL   *url;
-   char    *s;
 
    url = [NSURL URLWithString:string
                 relativeToURL:baseURL];
@@ -58,13 +48,10 @@ static NSURL  *test( NSURL *baseURL, NSString *string)
    [url mulleDump];
 #endif
 
-   printf( "String: %s baseURL: %s -> <%s> %s\n", (s = [string UTF8String]) ? s : "*nil*",
-                                                  (s = [baseURL UTF8String]) ? s : "*nil*",
-                                                  (s = [NSStringFromClass([ url class]) UTF8String]) ? s : "*nil*",
-                                                  (s = [url UTF8String]) ? s : "*nil*");
+   mulle_printf( "String: %@ baseURL: %@ -> <%@> %@\n", string, baseURL, NSStringFromClass([url class]), url);
    if( url)
       print_url( url);
-   printf( "\n");
+   mulle_printf( "\n");
    return( url);
 }
 

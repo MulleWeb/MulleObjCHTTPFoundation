@@ -1,12 +1,12 @@
 String: b baseURL: a -> <NSURL> a/b
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a/b
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : a/b
 

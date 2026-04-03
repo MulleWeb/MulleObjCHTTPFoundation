@@ -12,51 +12,39 @@
 # import <Foundation/Foundation.h>
 #endif
 
-@interface NSObject( CStringDescription)
-@end
+@interface NSObject( ForwardDeclaration)
 
-
-@implementation NSObject( CStringDescription)
-
-- (char *) UTF8String
-{
-   return( [[self description] cString]);
-}
+- (void) mulleDump;
 
 @end
 
 
 static void   print_url( NSURL  *url)
 {
-   char  *s;
-
-   printf( "Scheme            : %s\n", (s = [[url scheme] UTF8String]) ? s : "*nil*");
-   printf( "User              : %s\n", (s = [[url user] UTF8String]) ? s : "*nil*");
-   printf( "Password          : %s\n", (s = [[url password] UTF8String]) ? s : "*nil*");
-   printf( "Host              : %s\n", (s = [[url host] UTF8String]) ? s : "*nil*");
-   printf( "Port              : %ld\n",[[url port] longValue]);
-   printf( "Path              : %s\n", (s = [[url path] UTF8String]) ? s : "*nil*");
-   printf( "Parameter         : %s\n", (s = [[url parameterString] UTF8String]) ? s : "*nil*");
-   printf( "Query             : %s\n", (s = [[url query] UTF8String]) ? s : "*nil*");
-   printf( "Fragment          : %s\n", (s = [[url fragment] UTF8String]) ? s : "*nil*");
-   printf( "ResourceSpecifier : %s\n", (s = [[url resourceSpecifier] UTF8String]) ? s : "*nil*");
+   mulle_printf( "Scheme            : %@\n", [url scheme]);
+   mulle_printf( "User              : %@\n", [url user]);
+   mulle_printf( "Password          : %@\n", [url password]);
+   mulle_printf( "Host              : %@\n", [url host]);
+   mulle_printf( "Port              : %td\n", [url port]);
+   mulle_printf( "Path              : %@\n", [url path]);
+   mulle_printf( "Parameter         : %@\n", [url parameterString]);
+   mulle_printf( "Query             : %@\n", [url query]);
+   mulle_printf( "Fragment          : %@\n", [url fragment]);
+   mulle_printf( "ResourceSpecifier : %@\n", [url resourceSpecifier]);
 }
 
 
 static NSURL  *test( NSString *string)
 {
    NSURL   *url;
-   char    *s;
 
    url = [NSURL URLWithString:string];
    [url mulleDump];
 
-   printf( "String: %s -> <%s> %s\n", (s = [string UTF8String]) ? s : "*nil*",
-                                      (s = [NSStringFromClass([ url class]) UTF8String]) ? s : "*nil*",
-                                      (s = [[url description] UTF8String]) ? s : "*nil*");
+   mulle_printf( "String: %@ -> <%@> %@\n", string, NSStringFromClass([url class]), [url description]);
    if( url)
       print_url( url);
-   printf( "\n");
+   mulle_printf( "\n");
    return( url);
 }
 

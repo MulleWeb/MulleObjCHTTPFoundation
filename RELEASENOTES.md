@@ -72,7 +72,7 @@ Various small improvements
 
 ### 0.13.2
 
-* fixed and improved objc-loader.inc
+* fixed and improved objc-deps.inc
 
 ### 0.13.1
 

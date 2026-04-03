@@ -19,7 +19,7 @@
 //    remove #import      : `mulle-sde dependency mark MulleObjCInetFoundation no-header`
 //    rename              : `mulle-sde dependency|library set MulleObjCInetFoundation include whatever.h`
 //    reorder             : `mulle-sde dependency move MulleObjCInetFoundation <up|down>`
-//    toggle #import      : `mulle-sde dependency mark MulleObjCInetFoundation [no-]import`
+//    toggle objc         : `mulle-sde dependency mark MulleObjCInetFoundation [no-]import`
 //    toggle public       : `mulle-sde dependency mark MulleObjCInetFoundation [no-]public`
 //    toggle optional     : `mulle-sde dependency mark MulleObjCInetFoundation [no-]require`
 //    remove for platform : `mulle-sde dependency mark MulleObjCInetFoundation no-platform-<uname>`

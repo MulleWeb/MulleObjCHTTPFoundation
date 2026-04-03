@@ -1,112 +1,112 @@
-String: *nil* -> <*nil*> *nil*
+String: (nil) -> <(nil)> (nil)
 
 String:  -> <NSURL> 
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Path              : (nil)
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : 
 
 String: mailto:foo@foo.com -> <NSURL> mailto:foo@foo.com
 Scheme            : mailto
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : foo@foo.com
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : foo@foo.com
 
 String: tel:1234 -> <NSURL> tel:1234
 Scheme            : tel
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : 1234
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : 1234
 
 String: foo.txt -> <NSURL> foo.txt
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : foo.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : foo.txt
 
 String: ;param -> <NSURL> ;param
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
+Path              : (nil)
 Parameter         : param
-Query             : *nil*
-Fragment          : *nil*
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ;param
 
 String: file:///path/to/file;foo?bar -> <NSURL> file:///path/to/file;foo?bar
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /path/to/file;foo?bar
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /path/to/file;foo?bar
 
 String: file:foo.txt -> <NSURL> file:foo.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : foo.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : foo.txt
 
-String: file:foo space.txt -> <*nil*> *nil*
+String: file:foo space.txt -> <(nil)> (nil)
 
 String: file:///foo%20space.txt -> <NSURL> file:///foo%20space.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : 
 Port              : 0
 Path              : /foo space.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /foo space.txt
 
 String: file://foo.com/foo%20space.txt -> <NSURL> file://foo.com/foo%20space.txt
 Scheme            : file
-User              : *nil*
-Password          : *nil*
+User              : (nil)
+Password          : (nil)
 Host              : foo.com
 Port              : 0
 Path              : /foo space.txt
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /foo space.txt
 
