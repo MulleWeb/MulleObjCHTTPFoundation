@@ -56,8 +56,8 @@ src/generic/include.h
 set( PUBLIC_HEADERS
 src/MulleHTTPHeaderParser.h
 src/MulleHTTP.h
+src/MulleObjCDeps+MulleObjCHTTPFoundation.h
 src/MulleObjCHTTPFoundation.h
-src/MulleObjCLoader+MulleObjCHTTPFoundation.h
 src/NSDate+MulleHTTP.h
 src/NSString+HTML.h
 src/NSString+ListComponents.h

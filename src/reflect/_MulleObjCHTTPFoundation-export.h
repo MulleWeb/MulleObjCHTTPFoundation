@@ -15,7 +15,7 @@
 
 #import "MulleHTTPHeaderParser.h"
 #import "MulleHTTP.h"
-#import "MulleObjCLoader+MulleObjCHTTPFoundation.h"
+#import "MulleObjCDeps+MulleObjCHTTPFoundation.h"
 #import "NSDate+MulleHTTP.h"
 #import "NSString+HTML.h"
 #import "NSString+ListComponents.h"

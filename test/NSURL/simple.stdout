@@ -1,372 +1,372 @@
 String: / -> <NSURL> /
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : /
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /
 
 String: // -> <NSURL> //
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : //
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : //
 
 String: /// -> <NSURL> ///
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : ///
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ///
 
 String: //// -> <NSURL> ////
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : ////
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ////
 
 String: ///// -> <NSURL> /////
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : /////
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /////
 
 String: a -> <NSURL> a
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : a
 
 String: a/ -> <NSURL> a/
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a/
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : a/
 
 String: /a -> <NSURL> /a
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : /a
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /a
 
 String: /a/ -> <NSURL> /a/
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : /a/
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /a/
 
 String: //a -> <NSURL> //a
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : //a
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : //a
 
 String: a// -> <NSURL> a//
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a//
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : a//
 
 String: //a// -> <NSURL> //a//
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : //a//
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : //a//
 
 String: a: -> <NSURL> a:
 Scheme            : a
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Path              : (nil)
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : 
 
 String: :a -> <NSURL> :a
 Scheme            : 
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : a
 
 String: :a: -> <NSURL> :a:
 Scheme            : 
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a:
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : a:
 
 String: a; -> <NSURL> a;
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a
 Parameter         : 
-Query             : *nil*
-Fragment          : *nil*
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : a;
 
 String: ;a -> <NSURL> ;a
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
+Path              : (nil)
 Parameter         : a
-Query             : *nil*
-Fragment          : *nil*
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ;a
 
 String: ;a; -> <NSURL> ;a;
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
+Path              : (nil)
 Parameter         : a;
-Query             : *nil*
-Fragment          : *nil*
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ;a;
 
 String: a? -> <NSURL> a?
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a
-Parameter         : *nil*
+Parameter         : (nil)
 Query             : 
-Fragment          : *nil*
+Fragment          : (nil)
 ResourceSpecifier : a?
 
 String: ?a -> <NSURL> ?a
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
-Parameter         : *nil*
+Path              : (nil)
+Parameter         : (nil)
 Query             : a
-Fragment          : *nil*
+Fragment          : (nil)
 ResourceSpecifier : ?a
 
 String: ?a? -> <NSURL> ?a?
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
-Parameter         : *nil*
+Path              : (nil)
+Parameter         : (nil)
 Query             : a?
-Fragment          : *nil*
+Fragment          : (nil)
 ResourceSpecifier : ?a?
 
 String: a# -> <NSURL> a#
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : a
-Parameter         : *nil*
-Query             : *nil*
+Parameter         : (nil)
+Query             : (nil)
 Fragment          : 
 ResourceSpecifier : a#
 
 String: #a -> <NSURL> #a
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
-Parameter         : *nil*
-Query             : *nil*
+Path              : (nil)
+Parameter         : (nil)
+Query             : (nil)
 Fragment          : a
 ResourceSpecifier : #a
 
 String: #a# -> <NSURL> #a#
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
-Parameter         : *nil*
-Query             : *nil*
+Path              : (nil)
+Parameter         : (nil)
+Query             : (nil)
 Fragment          : a#
 ResourceSpecifier : #a#
 
 String: //a/ -> <NSURL> //a/
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : //a/
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : //a/
 
 String: /a// -> <NSURL> /a//
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : /a//
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /a//
 
 String: ///a -> <NSURL> ///a
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : ///a
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ///a
 
 String: ///a/ -> <NSURL> ///a/
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : ///a/
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : ///a/
 
 String: //./ -> <NSURL> //./
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : //./
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : //./
 
 String: /./../ -> <NSURL> /./../
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : /./../
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /./../
 
 String: /..//. -> <NSURL> /..//.
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : /..//.
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : /..//.
 

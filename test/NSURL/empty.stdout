@@ -1,18 +1,18 @@
-String: *nil* -> <*nil*> *nil*
+String: (nil) -> <(nil)> (nil)
 
 String:  -> <NSURL> 
-Scheme            : *nil*
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+Scheme            : (nil)
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
-Path              : *nil*
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Path              : (nil)
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : 
-RelativePath      : *nil*
+RelativePath      : (nil)
 RelativeString    : 
-Base              : *nil*
+Base              : (nil)
 Absolute          : 
 

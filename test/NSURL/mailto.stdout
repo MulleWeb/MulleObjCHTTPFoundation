@@ -1,16 +1,16 @@
 String: mailto:foo@foo.com -> <NSURL> mailto:foo@foo.com
 Scheme            : mailto
-User              : *nil*
-Password          : *nil*
-Host              : *nil*
+User              : (nil)
+Password          : (nil)
+Host              : (nil)
 Port              : 0
 Path              : foo@foo.com
-Parameter         : *nil*
-Query             : *nil*
-Fragment          : *nil*
+Parameter         : (nil)
+Query             : (nil)
+Fragment          : (nil)
 ResourceSpecifier : foo@foo.com
 RelativePath      : foo@foo.com
 RelativeString    : foo@foo.com
-Base              : *nil*
+Base              : (nil)
 Absolute          : mailto:foo@foo.com
 
