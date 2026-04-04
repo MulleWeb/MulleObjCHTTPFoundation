@@ -46,6 +46,10 @@
 
 @implementation NSURL( HTTP)
 
+
+@dependency NSURL( File);
+
+
 static struct MulleURLSchemeHandler   MulleURLHTTPSchemeHandler =
 {
    @selector( mulleInitHTTPURLWithArguments:),
@@ -54,7 +58,6 @@ static struct MulleURLSchemeHandler   MulleURLHTTPSchemeHandler =
 };
 
 
-MULLE_OBJC_DEPENDS_ON_LIBRARY( MulleObjCValueFoundation);
 
 + (void) load
 {

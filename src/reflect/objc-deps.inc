@@ -1,3 +1,5 @@
+      { @selector( MulleObjCDeps), @selector( MulleFoundationBase) },      // 3c20656f;MulleObjCDeps;efab19ea;MulleFoundationBase
+      { @selector( MulleObjCDeps), @selector( MulleObjCInetFoundation) },      // 3c20656f;MulleObjCDeps;088ec1b3;MulleObjCInetFoundation
       { @selector( MulleHTTPHeaderParser), MULLE_OBJC_NO_CATEGORYID },      // 33ba7405;MulleHTTPHeaderParser;;
       { @selector( NSDate), @selector( MulleHTTP) },      // cfcedd21;NSDate;72f647ea;MulleHTTP
       { @selector( NSString), @selector( ListComponents) },      // 1994a171;NSString;65ed93d3;ListComponents

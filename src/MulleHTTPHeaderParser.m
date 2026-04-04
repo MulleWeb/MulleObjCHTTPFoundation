@@ -52,7 +52,7 @@ enum MulleHTTPHeaderParserState
 
 
 
-@implementation MulleHTTPHeaderParser : NSObject
+@implementation MulleHTTPHeaderParser
 
 - (instancetype) init
 {
