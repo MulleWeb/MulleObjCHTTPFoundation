@@ -2,7 +2,7 @@
    project =
    {
       description="🎫 HTTP and HTML utility methods and classes for mulle-objc";
-      version="0.19.0";
+      version="0.19.1";
       domain="github";
       name="MulleObjCHTTPFoundation";
       user="MulleWeb";
