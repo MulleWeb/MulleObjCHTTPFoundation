@@ -17,6 +17,24 @@ export MULLE_OBJC_HTTP_FOUNDATION_BRANCH="prerelease"
 
 
 #
+# MulleObjCStandardFoundation-startup nodetype: ${MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_NODETYPE:-tar}
+#
+export MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_NODETYPE="git"
+
+
+#
+# MulleObjCStandardFoundation-startup url: ${MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_URL:-https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/${MULLE_TAG}.tar.gz}
+#
+export MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_URL="https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup.git"
+
+
+#
+# MulleObjCStandardFoundation-startup branch: ${MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_BRANCH}
+#
+export MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_BRANCH="prerelease"
+
+
+#
 # mulle-testallocator nodetype: ${MULLE__TESTALLOCATOR_NODETYPE:-tar}
 #
 export MULLE__TESTALLOCATOR_NODETYPE="git"
