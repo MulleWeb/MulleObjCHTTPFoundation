@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleObjCHTTPFoundation VERSION 0.19.1 LANGUAGES C)
+project( MulleObjCHTTPFoundation VERSION 0.19.2 LANGUAGES C)
 
 
 
