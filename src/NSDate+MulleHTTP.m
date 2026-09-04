@@ -1,11 +1,10 @@
 //
 //  NSDate+MulleHTTP.m
-//  MulleCivetWeb
+//  MulleObjCHTTPFoundation
 //
-//  Created by Nat! on 02.02.20.
-//
-//  Copyright (c) 2020 Nat! - Mulle kybernetiK
+//  Copyright (c) 2020 Nat! - Mulle kybernetiK.
 //  All rights reserved.
+//
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
@@ -33,7 +32,6 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 //
-
 #import "NSDate+MulleHTTP.h"
 
 

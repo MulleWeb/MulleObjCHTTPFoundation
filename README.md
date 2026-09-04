@@ -36,6 +36,11 @@ Adds HTTP parsing support to **NSURL** and HTML escaping and unescaping for
 
 
 
+## Documentation & Guides
+
+* [API Summary](asset/dox/api/toc)
+
+
 ### You are here
 
 ![Overview](overview.dot.svg)
