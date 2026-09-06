@@ -1,12 +1,12 @@
 {
    "name" : "MulleObjCHTTPFoundation",
-   "version" : "0.19.1",
+   "version" : "0.19.2",
    "description" : "🎫 HTTP and HTML utility methods and classes for mulle-objc",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleWeb/MulleObjCHTTPFoundation",
    "src" : [
-      "asset/dox/TOC.md",
+      "asset/dox/api/toc/index.md",
       "src/generic/import-private.h",
       "src/generic/import.h",
       "src/generic/include-private.h",
