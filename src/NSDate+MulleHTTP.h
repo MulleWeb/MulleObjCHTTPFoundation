@@ -40,4 +40,13 @@
 // Sun, 06 Nov 1994 08:49:37 GMT
 - (NSString *) mulleHTTPDescription;
 
+// Parse an HTTP/RFC 1123 date, e.g. "Sun, 06 Nov 1994 08:49:37 GMT".
++ (instancetype) mulleDateWithHTTPDateString:(NSString *) string;
+
+// Parse an RFC 3339 / ISO 8601 date, e.g. "2026-09-08T10:00:00Z".
++ (instancetype) mulleDateWithISO8601String:(NSString *) string;
+
+// Try either dialect; for syndication feeds, which use both.
++ (instancetype) mulleDateWithString:(NSString *) string;
+
 @end

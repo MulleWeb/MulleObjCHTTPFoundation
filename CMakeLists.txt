@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleObjCHTTPFoundation VERSION 0.19.2 LANGUAGES C)
+project( MulleObjCHTTPFoundation VERSION 0.20.0 LANGUAGES C)
 
 
 
@@ -36,8 +36,8 @@ include( Library)
 include( InstallLibrary)
 
 if( LINK_PHASE)
-   include( InstallCMakeInclude)
-   include( InstallCMakePackage)
+   include( AddSubdirectorySupport)
+   include( FindPackageSupport)
 endif() 
 
 include( FinalOutput OPTIONAL)

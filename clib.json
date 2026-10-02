@@ -1,6 +1,6 @@
 {
    "name" : "MulleObjCHTTPFoundation",
-   "version" : "0.19.2",
+   "version" : "0.20.0",
    "description" : "🎫 HTTP and HTML utility methods and classes for mulle-objc",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -36,6 +36,7 @@
    ],
    "dependencies" : {
       "MulleWeb/MulleObjCInetFoundation": "*",
-      "mulle-objc/mulle-objc-list": "*"
+      "mulle-objc/mulle-objc-tools": "*",
+      "MulleFoundation/MulleFoundation": "*"
    }
 }

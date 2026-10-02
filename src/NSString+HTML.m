@@ -464,20 +464,18 @@ static int EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
           if ([scanner scanHexInt:&value] &&
               value > 0
               && [scanner scanLocation] == length - 4) {
-            if (value < USHRT_MAX) {
+            //
+            // unichar is UTF-32 here, so a code point above the BMP is one
+            // character and not a surrogate pair: building the pair would hand
+            // the runtime two code points it rejects as invalid UTF32. The
+            // surrogates are excluded because they are not code points, and a
+            // value beyond the last plane is left alone like any other
+            // sequence that does not decode.
+            //
+            if (value <= 0x10FFFF && (value < 0xD800 || value > 0xDFFF)) {
               unichar uchar = (unichar)value;
               NSString *charString = [NSString stringWithCharacters:&uchar length:1];
               [finalString replaceCharactersInRange:escapeRange withString:charString];
-            } else if (value >= 0x10000 && value <= 0x10FFFF) {
-              // code points in unicode supplementary planes
-              int subtractedValue = value - 0x10000;
-              unichar uchars[2];
-              uchars[0] = 0xD800 + (subtractedValue >> 10);
-              uchars[1] = 0xDC00 + (subtractedValue & 0x3FF);
-              NSString *charString = [NSString stringWithCharacters:uchars length:2];
-              if (charString) {
-                [finalString replaceCharactersInRange:escapeRange withString:charString];
-              }
             }
           }
         } else {
@@ -488,20 +486,11 @@ static int EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
           if ([scanner scanInt:&value] &&
               value > 0
               && [scanner scanLocation] == length - 3) {
-            if (value < USHRT_MAX) {
+            // as above: one UTF-32 code point, not a surrogate pair
+            if (value <= 0x10FFFF && (value < 0xD800 || value > 0xDFFF)) {
               unichar uchar = (unichar)value;
               NSString *charString = [NSString stringWithCharacters:&uchar length:1];
               [finalString replaceCharactersInRange:escapeRange withString:charString];
-            } else if (value >= 0x10000 && value <= 0x10FFFF) {
-              // code points in unicode supplementary planes
-              int subtractedValue = value - 0x10000;
-              unichar uchars[2];
-              uchars[0] = 0xD800 + (subtractedValue >> 10);
-              uchars[1] = 0xDC00 + (subtractedValue & 0x3FF);
-              NSString *charString = [NSString stringWithCharacters:uchars length:2];
-              if (charString) {
-                [finalString replaceCharactersInRange:escapeRange withString:charString];
-              }
             }
           }
         }

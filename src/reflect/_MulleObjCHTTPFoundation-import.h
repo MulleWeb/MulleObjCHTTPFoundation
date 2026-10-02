@@ -3,11 +3,11 @@
  *   `mulle-sde reflect` and any edits will be lost.
  *   Suppress generation of this file with:
  *
- *      mulle-sde environment set MULLE_SOURCETREE_TO_C_IMPORT_FILE DISABLE
+ *      mulle-sde environment --global set MULLE_SOURCETREE_TO_C_IMPORT_FILE DISABLE
  *
  *   To not let mulle-sourcetree-to-c generate any header files:
  *
- *      mulle-sde environment set MULLE_SOURCETREE_TO_C_RUN DISABLE
+ *      mulle-sde environment --global set MULLE_SOURCETREE_TO_C_RUN DISABLE
  *
  */
 
@@ -25,6 +25,21 @@
 //    remove for platform : `mulle-sde dependency mark MulleObjCInetFoundation no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #import <MulleObjCInetFoundation/MulleObjCInetFoundation.h>   // MulleObjCInetFoundation
+
+// To remove the following dependency (headers and library) completely:
+//   `mulle-sde dependency remove MulleFoundation`
+// (Use 82359E7E-A446-454C-94B2-B8848CD8C093 instead of MulleFoundation, if there are duplicate entries)
+//
+// You can tweak the following #import with these commands:
+//    remove #import      : `mulle-sde dependency mark MulleFoundation no-header`
+//    rename              : `mulle-sde dependency|library set MulleFoundation include whatever.h`
+//    reorder             : `mulle-sde dependency move MulleFoundation <up|down>`
+//    toggle objc         : `mulle-sde dependency mark MulleFoundation [no-]import`
+//    toggle public       : `mulle-sde dependency mark MulleFoundation [no-]public`
+//    toggle optional     : `mulle-sde dependency mark MulleFoundation [no-]require`
+//    remove for platform : `mulle-sde dependency mark MulleFoundation no-platform-<uname>`
+//        (use `mulle-sourcetree-to-c --unames` to list known values)
+#import <MulleFoundation/MulleFoundation.h>   // MulleFoundation
 
 #ifdef __has_include
 # if __has_include( "_MulleObjCHTTPFoundation-include.h")
