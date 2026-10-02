@@ -13,8 +13,8 @@
 #define _mulle_objc_http_foundation__export_h__
 
 
-#import "MulleHTTPHeaderParser.h"
 #import "MulleHTTP.h"
+#import "MulleHTTPHeaderParser.h"
 #import "MulleObjCDeps+MulleObjCHTTPFoundation.h"
 #import "NSDate+MulleHTTP.h"
 #import "NSString+HTML.h"
