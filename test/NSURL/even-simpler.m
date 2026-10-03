@@ -43,7 +43,7 @@ static NSURL  *test( NSString *string)
    NSURL   *url;
 
    url = [NSURL URLWithString:string];
-#ifdef __MULLE_OBJC__
+#if defined( DEBUG) && defined( __MULLE_OBJC__)
    [url mulleDump];
 #endif
 

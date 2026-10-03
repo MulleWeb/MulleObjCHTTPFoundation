@@ -39,7 +39,9 @@ static NSURL  *test( NSString *string)
    NSURL   *url;
 
    url = [NSURL URLWithString:string];
+#if defined( DEBUG) && defined( __MULLE_OBJC__)
    [url mulleDump];
+#endif
 
    mulle_printf( "String: %@ -> <%@> %@\n", string, NSStringFromClass([url class]), [url description]);
    if( url)

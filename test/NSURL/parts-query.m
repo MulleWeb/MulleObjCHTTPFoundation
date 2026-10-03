@@ -36,7 +36,7 @@ static void   print_url( NSURL  *url)
 
 static void   print( NSURL *url)
 {
-#ifdef __MULLE_OBJC__
+#if defined( DEBUG) && defined( __MULLE_OBJC__)
    [url mulleDump];
 #endif
 
