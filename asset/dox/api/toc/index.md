@@ -114,14 +114,23 @@ Constants and an enum for HTTP headers and request methods. No structs.
 
 #### `@interface NSDate( MulleHTTP)`
 
-- **Purpose:** Format an `NSDate` as an HTTP `Date:` header string.
-- **Method:**
+- **Purpose:** Format an `NSDate` as an HTTP `Date:` header string, and parse
+  HTTP/ISO 8601 date strings back into an `NSDate`.
+- **Methods:**
   - `- (NSString *) mulleHTTPDescription;`
-- **Behaviour:** Produces the RFC 1123 style used by HTTP
+  - `+ (instancetype) mulleDateWithHTTPDateString:(NSString *) string;`
+    Parse an HTTP/RFC 1123 date, e.g. `Sun, 06 Nov 1994 08:49:37 GMT`.
+  - `+ (instancetype) mulleDateWithISO8601String:(NSString *) string;`
+    Parse an RFC 3339 / ISO 8601 date, e.g. `2026-09-08T10:00:00Z`.
+  - `+ (instancetype) mulleDateWithString:(NSString *) string;`
+    Try either dialect; for syndication feeds, which use both.
+- **Behaviour:** `mulleHTTPDescription` produces the RFC 1123 style used by HTTP
   (format `"%a, %d %b %Y %H:%M:%S GMT"`, e.g.
   `Sun, 06 Nov 1994 08:49:37 GMT`). Uses a cached `NSDateFormatter` with
-  `en_US` locale and the GMT timezone. There is no reverse (string-to-date)
-  parser in this library.
+  `en_US` locale and the GMT timezone. The parsing methods try a list of
+  `strftime`-style formats in order and return `nil` for an empty or
+  unparseable string; `mulleDateWithString:` tries the HTTP formats first,
+  then the ISO 8601 formats.
 
 ### 3.4. `NSString+HTML.h`
 
@@ -230,9 +239,8 @@ The file `NSURL+HTTP.m` provides `@implementation NSURL( HTTP)`:
   - Use the `extractOrder`/`extractHeaders` destructors when you want to
     avoid the copy performed by `order`/`headers`.
 - **Common Pitfalls**
-  - Do not assume `NSDate` can be parsed back from an HTTP date string in
-    this library; there is no `dateFromHTTPDateString:` — only the
-    output formatter `mulleHTTPDescription`.
+  - `NSDate` parsing supports the documented HTTP/RFC 1123 and RFC 3339 /
+    ISO 8601 dialects only; other date formats return `nil`.
   - `mulleRangeOfListComponent:separator:` requires a non-empty separator;
     with an empty separator it returns `NSMakeRange(NSNotFound, 0)`.
   - List members are compared literally
@@ -365,11 +373,15 @@ Direct `mulle-sde` dependencies (from `.mulle/etc/sourcetree/config`):
   architecture (`mulleInitWithEscapedURLPartsUTF8:allowedURICharacterSet:`,
   `mulleRegisterHandler:forScheme:`) and related Foundation classes used by
   this library.
+- `MulleFoundation` — provides the base Foundation classes (e.g.
+  `NSDateFormatter`, `NSLocale`, `NSTimeZone`) used by the `NSDate`
+  formatter/parser caches.
 - `mulle-objc-list` — tool dependency used at build/reflection time.
 
 ## 8. Shortcut
 
-The previous `index.md` was committed on 2026-09-05. Only a CI environment
-file has changed in the working tree since; the public API is unchanged.
-The document was rewritten because the previous version documented
-non-existent APIs and omitted real public headers.
+Since the previous `index.md` was written, `NSDate+MulleHTTP.h` gained three
+class methods for parsing HTTP/RFC 1123 and RFC 3339/ISO 8601 date strings
+(`mulleDateWithHTTPDateString:`, `mulleDateWithISO8601String:`,
+`mulleDateWithString:`) and `MulleFoundation` was added as a direct
+dependency. The rest of the public API is unchanged.
