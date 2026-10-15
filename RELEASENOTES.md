@@ -2,6 +2,7 @@
 
 
 
+
 feature: add date parsing and fix HTML entity unescaping
 
 * NSDate gains `+mulleDateWithHTTPDateString:`, `+mulleDateWithISO8601String:` and `+mulleDateWithString:` for RFC 1123, RFC 822, RFC 3339 and ISO 8601 feed dates
